@@ -61,7 +61,7 @@ namespace ParamountRestaurant.Pages.Restaurants
             }
             restaurantData.Commit();
             TempData["Message"] = "Restaurant data saved";
-            return RedirectToPage("./Details", new { restaurantId = Restaurant.Id });
+            return RedirectToPage("./Detail", new { restaurantId = Restaurant.Id });
 
         }
     }
